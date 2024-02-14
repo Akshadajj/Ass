@@ -1,0 +1,7 @@
+<div class="sidenav">
+    <button class="group-btn" (click)="toggleGroup(group)" *ngFor="let group of groups">{{ group.name }}</button>
+    <div class="group-content" *ngFor="let group of groups" [ngClass]="{'active': group.expanded}">
+      <a href="#" *ngFor="let link of group.links">{{ link }}</a>
+    </div>
+  </div>
+  

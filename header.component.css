@@ -1,0 +1,43 @@
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .group-btn {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .group-content {
+    display: none;
+    background-color: #222;
+  }
+  
+  .group-content a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+  }
+  
+  .group-content a:hover {
+    background-color: #444;
+  }
+  
+  .active {
+    display: block;
+  }
+  

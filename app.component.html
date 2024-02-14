@@ -1,0 +1,36 @@
+<app-sidenav></app-sidenav>
+<app-header></app-header>
+
+
+<!-- app.component.html -->
+<button (click)="switchLanguage('en')">English</button>
+<button (click)="switchLanguage('ar')">Arabic</button>
+
+<div class="container">
+  <div class="sidebar" [ngClass]="{'rtl': translateService.currentLang === 'ar'}">
+    <!-- Sidebar content -->
+  </div>
+  <div class="content">
+    <h1>{{ 'HELLO_WORLD' | translate }}</h1>
+    <!-- Other content -->
+  </div>
+</div>
+
+<!-- app.component.html -->
+<table datatable [dtOptions]="dtOptions" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <!-- Add more columns as needed -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <!-- Add more cells for other columns -->
+      </tr>
+    </tbody>
+  </table>
+  

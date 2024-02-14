@@ -1,0 +1,16 @@
+<header>
+    <div class="logo">Warehouse Management System</div>
+    <nav>
+      <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/contact-us">Contact Us</a></li>
+        <li><button (click)="logout()">Logout</button></li>
+        <li>
+          <button (click)="toggleLanguage()">
+            {{ currentLanguage === 'en' ? 'عربي' : 'English' }}
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
